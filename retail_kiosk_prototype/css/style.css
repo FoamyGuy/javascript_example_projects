@@ -1,0 +1,170 @@
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+.centered-div {
+    width: 100%;
+    text-align: center;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden; /*  hide scrollbars */
+    opacity: 1.0;
+    -webkit-transition: background 1.5s linear;
+    -moz-transition: background 1.5s linear;
+    -o-transition: background 1.5s linear;
+    -ms-transition: background 1.5s linear;
+    transition: background 1.5s linear;
+}
+
+.start-btn {
+    font-size: 5em;
+    margin-top: 50px;
+}
+
+.logo {
+
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.product-img {
+    width: 640px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.branding-message {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav li{
+    width: 33%;
+    float: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    width: 646px;
+}
+
+nav li {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background-color: #111;
+    text-decoration: none;
+    color: #FFF;
+}
+nav .selected{
+	background-color: #555;
+}
+
+.overview, .features, .video, .prize-p{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: left;
+    width: 649px;
+}
+
+.features p{
+    width: 310px;
+    display: inline-block;
+    float: left;
+    margin-left: 16px;
+}
+
+.features img{
+    float: left;
+}
+
+.top-images img{
+    display: inline-block;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+
+.top-images {
+     margin-bottom: 6px;
+}
+
+.bottom-image img{
+    width: 648px;
+}
+
+.prize-btn{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prize-btn-div{
+    text-align: center;
+}
+
+.features{
+    display: none;
+}
+
+.video{
+    display: none;
+}
+
+.back-btn{
+    margin: 20px;
+    padding: 10px;
+    position: fixed;
+}
+
+#name-in, #email-in, #dob-zip-row{
+    width: 649px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+#dob-in, #zip-in{
+    width: 320px;
+    margin-bottom: 10px;
+    float: left;
+}
+
+#zip-in{
+    margin-left: 8px;
+}
+
+.prize-submit-btn{
+    width: 649px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.prize-img{
+    margin-bottom: 20px;
+}

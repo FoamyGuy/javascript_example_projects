@@ -1,0 +1,12 @@
+body{
+	padding: 30px;
+}
+#display{
+	font-size: 30px;
+}
+
+button{
+	font-size: 30px;
+	width: 60px;
+	margin: 2px;
+}
