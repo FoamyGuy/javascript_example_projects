@@ -1,0 +1,24 @@
+{
+"list":[
+	{
+		"latLng": "42.6351, -114.50861",
+		"text": "Golf Course",
+		"icon": "golf"
+	},
+	{
+		"latLng": "40.75059, -73.99356",
+		"text": "Penn Station",
+		"icon": "arena"
+	},
+	{
+		"latLng": "44.92101, -93.24088",
+		"text": "Colder Golf Course",
+		"icon": "golf"
+	},
+	{
+		"latLng": "24.56236, -81.80005",
+		"text": "Sport Fishing ",
+		"icon": "Boat"
+	}
+]
+}

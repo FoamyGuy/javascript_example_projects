@@ -1,0 +1,23 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+#background{
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper{
+	width: 100%;
+	position: absolute;
+	top: 140px;
+	text-align: center;
+}
+#date{
+	color: #FFF;
+	font-size: 7em;
+	font-family: sans-serif;
+}
