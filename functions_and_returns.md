@@ -88,6 +88,7 @@ console.log(17);
 ```
 
 ---
+---
 
 Now let's look at why the ```return``` statement is important. For this we will imagine our functions declared this way:
 ```javascript
@@ -127,8 +128,9 @@ Step 3 will execute and print to the console:
 Because we didn't have a ```return``` statement, javascript ended up returning ```undefined``` by default. This messed up the ```add()``` function. So unlike the first example, we don't get the correct result of the equation. 
 
 ---
+---
 
-Now a slightly bigger and more practical example of how this can be a useful tool for us as developers.
+Now a slightly bigger and more practical example of how functions that return things can be a useful tool for us as developers.
 
 We have some data like this:
 ```javascript
