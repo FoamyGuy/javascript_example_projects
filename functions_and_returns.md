@@ -35,6 +35,7 @@ var answer = 12 + 15;
 After step 2: the ```answer``` variable will hold the value ```27```.
 
 ---
+---
 
 When you execute statements that call functions, the system breaks them down into steps. The process is similar to the one it uses for variables.
 
