@@ -114,7 +114,7 @@ Step 3 will execute and print to the console:
 >>> NaN //<- step 3 printed this
 ```
 
-Because we didn't have a ```return``` statement, javascript ended up returning ```undefined``` by default, which messed up the ```add()``` function. So unlike in the first example, we don't get the correct result of the equation. 
+Because we didn't have a ```return``` statement, javascript ended up returning ```undefined``` by default. This messed up the ```add()``` function. So unlike the first example, we don't get the correct result of the equation. 
 
 Now a slightly bigger and more practical example of how this can be a useful tool for us as developers.
 
@@ -155,7 +155,7 @@ function wrapTextInParagraph(textToWrap){
 	This function uses our wrapper functions to make a div
 	that contains basic account information.
 	
-	It expects to receive one parameter, the accountNumer
+	It expects to receive one parameter, the accountNumber
 	of the account that you want to show.
 */
 function buildAccountDiv(accountNumber){
@@ -180,7 +180,7 @@ function buildAccountDiv(accountNumber){
 	return accountDiv;
 }
 ```
-Now we can use theese to make a simple output interface for the bank account program.
+Now we can use these to make a simple output interface for the bank account program.
 
 In our HTML we have a `<div>` like this:
 ```html
@@ -196,7 +196,7 @@ var chosenAccountNumber = "8276453";
 // lookup the div from our HTML
 var $accountDiv = document.querySelector("#accountDiv");
 
-// empty it out incase it had something in it previously
+// empty it out in case it had something in it previously
 accountDiv.innerHTML = "";
 
 // use buildAccountDiv() to make the content for us and append it to the accountDiv in the HTML.
