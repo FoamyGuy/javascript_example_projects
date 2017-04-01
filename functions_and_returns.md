@@ -19,7 +19,7 @@ Step 2:
 >>> John
 ```
 Output from step 2 is in the console.
-
+---
 This concept works the same way when you use variables in math equations:
 
 ```javascript
@@ -31,7 +31,7 @@ After step 1 it looks like this:
 var answer = 12 + 15; 
 ```
 After step 2: the ```answer``` variable will hold the value ```27```.
-
+---
 When you execute statements that call functions, the system breaks them down into steps. The process is similar to the one it uses for variables.
 
 Let's say we have some functions like these:
@@ -60,7 +60,7 @@ Step 2:
 >>> 14
 ```
 Output from step 2 is in the console.
-
+---
 You can call a function inside the parentheses of any other function. The system will always work from the innermost function all the way to the outermost function. So if we had more function calls, it could look like this:
 
 
@@ -79,6 +79,7 @@ console.log(17);
 ```javascript
 >>> 17
 ```
+---
 Now let's look at why the ```return``` statement is important. For this we will imagine our functions declared this way:
 ```javascript
 function add(a,b){
@@ -115,7 +116,7 @@ Step 3 will execute and print to the console:
 ```
 
 Because we didn't have a ```return``` statement, javascript ended up returning ```undefined``` by default. This messed up the ```add()``` function. So unlike the first example, we don't get the correct result of the equation. 
-
+---
 Now a slightly bigger and more practical example of how this can be a useful tool for us as developers.
 
 We have some data like this:
