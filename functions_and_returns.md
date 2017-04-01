@@ -108,7 +108,7 @@ The ```double()``` still goes first, but this time it outputs its answer to the 
 ```javascript
 >>> 10
 ```
-Since we don't have a ```return``` statement in our function, javascript returns ```undefined``` for us by default. So after step 1 is complete, the statement now looks like this:
+Since we don't have a ```return``` statement in our function, JavaScript returns ```undefined``` for us by default. So after step 1 is complete, the statement now looks like this:
 
 ```javascript
 console.log(add(undefind, 7)); 
@@ -125,7 +125,7 @@ Step 3 will execute and print to the console:
 >>> NaN //<- step 3 printed this
 ```
 
-Because we didn't have a ```return``` statement, javascript ended up returning ```undefined``` by default. This messed up the ```add()``` function. So unlike the first example, we don't get the correct result of the equation. 
+Because we didn't have a ```return``` statement, JavaScript ended up returning ```undefined``` by default. This messed up the ```add()``` function. So unlike the first example, we don't get the correct result of the equation. 
 
 ---
 ---
@@ -201,7 +201,7 @@ In our HTML we have a `<div>` like this:
 <div id="accountDiv"></div>
 ```
 
-In javascript we lookup the div and use the buildAccountDiv() method to built the content for it.
+In JavaScript we lookup the div and use the buildAccountDiv() method to built the content for it.
 Then we empty out our div and add the one that we just created to it.
 ```javascript
 // Hardcoded for this example. But would likely come from the user.
