@@ -116,7 +116,7 @@ Step 3 will execute and print to the console:
 
 Because we didn't have a ```return``` statement, javascript ended up returning ```undefined``` by default, which messed up the ```add()``` function. So unlike in the first example, we don't get the correct result of the equation. 
 
-Now a slightly bigger and more practical example of why this is a useful tool for us as developers.
+Now a slightly bigger and more practical example of how this can be a useful tool for us as developers.
 
 We have some data like this:
 ```javascript
@@ -135,29 +135,48 @@ var accounts = {
     }
 }
 ```
-We will set up some helper functions that `return` some DOM elements to us when we call them. 
+We will set up some helper functions that `return` some DOM elements to us when they are called. 
 ```javascript
+// this function wraps some input text inside of an <h1> tag.
 function wrapTextInHeader(textToWrap){
 	header = document.createElement("h1");
     header.textContent = textToWrap;
 	return header
 }
 
+// this function wraps some input text inside of an <p> tag.
 function wrapTextInParagraph(textToWrap){
 	header = document.createElement("p");
     header.textContent = textToWrap;
 	return header
 }
 
+/*
+	This function uses our wrapper functions to make a div
+	that contains basic account information.
+	
+	It expects to receive one parameter, the accountNumer
+	of the account that you want to show.
+*/
 function buildAccountDiv(accountNumber){
+	//create a <div>
 	accountDiv = document.createElement("div");
-    accountDiv.appendChild(wrapTextInHeader(accounts[accountNumber]));
-    var balanceStr = "checking: ";
-    balanceStr += accounts[accountNumber].checkingAccountBalance;
-    balanceStr += "<br>"; 
-    balanceStr += "savings:";
-    balanceStr += accounts[accountNumber].savingsAccountBalance;
-    accountDiv.appendChild(wrapTextInParagraph(balanceStr));
+	
+	// use our helper function to make a welcome message for the user and append it to the div
+	accountDiv.appendChild(wrapTextInHeader("Hello " + accounts[accountNumber].name));
+	
+	// make a string for checking account balance
+	var balanceStr = "checking: " + accounts[accountNumber].checkingAccountBalance;
+	
+	// make a <p> element from our string and append it to the div
+	accountDiv.appendChild(wrapTextInParagraph(balanceStr));
+	
+	// make a string for savings account balance
+	balanceStr = "savings: " + accounts[accountNumber].savingsAccountBalance;
+	
+	// make a <p> element from our string and append it to the div
+	accountDiv.appendChild(wrapTextInParagraph(balanceStr));
+	
 	return accountDiv;
 }
 ```
@@ -168,11 +187,19 @@ In our HTML we have a `<div>` like this:
 <div id="accountDiv"></div>
 ```
 
+In javascript we lookup the div and use the buildAccountDiv() method to built the content for it.
+Then we empty out our div and add the one that we just created to it.
 ```javascript
-// Hardcoded for example. But would likely come from the user.
+// Hardcoded for this example. But would likely come from the user.
 var chosenAccountNumber = "8276453";
+
+// lookup the div from our HTML
 var $accountDiv = document.querySelector("#accountDiv");
+
+// empty it out incase it had something in it previously
 accountDiv.innerHTML = "";
+
+// use buildAccountDiv() to make the content for us and append it to the accountDiv in the HTML.
 accountDiv.appendChild(buildAccountDiv(chosenAccountNumber));
 ```
 
