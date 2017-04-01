@@ -7,7 +7,7 @@ Let's start with a bit about variables.
 var first_name = "John";
 console.log(first_name);
 ```
-When the computer executes the above code, it will do so in two steps. The first step is to replace the variable with its value, and the second step is to execute the console.log() function.
+When the computer executes the above code, it will do so in two steps. The first step is to replace the variable with its value, and the second step is to execute the `console.log()` function.
 
 Step 1:
 
@@ -54,7 +54,7 @@ We can use use them like this:
 ```javascript
 console.log(add(10, 4)); // This will get executed in 2 steps like how the variables did.
 ```
-In this case, step 1 will be evaluating the add() function. The reason we can use the ```add()``` function inside of the parentheses of another function is because the `add()` function returns a value.
+In this case, step 1 will be evaluating the `add()` function. The reason we can use the ```add()``` function inside of the parentheses of another function is because the `add()` function returns a value.
 
 After step 1, it looks like this:
 ```javascript
@@ -125,7 +125,7 @@ Step 3 will execute and print to the console:
 >>> NaN //<- step 3 printed this
 ```
 
-Because we didn't have a ```return``` statement, JavaScript ended up returning ```undefined``` by default. This messed up the ```add()``` function. So unlike the first example, we don't get the correct result of the equation. 
+Because we didn't have a ```return``` statement in `double()`, JavaScript ended up returning ```undefined``` by default. This messed up the ```add()``` function. So unlike the first example, we don't get the correct result of the equation. 
 
 ---
 ---
