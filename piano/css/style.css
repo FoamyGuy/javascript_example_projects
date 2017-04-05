@@ -1,0 +1,39 @@
+.piano-key{
+	height: 200px;
+	width: 50px;
+	border: 1px solid black;
+	border-radius: 8px;
+	font-size: 3em;
+	font-family: sans-serif;
+	text-align: center;
+	vertical-align: bottom;
+	display: table-cell; /* <-- need this to make vertical-align work */
+}
+
+
+#C4-note.pressed-key{
+	background-color: #f9ffa5;
+}
+#D-note.pressed-key{
+	background-color: #ccffa4;
+}
+#E-note.pressed-key{
+	background-color: #a3ffd3;
+}
+#F-note.pressed-key{
+	background-color: #9ea1ff;
+}
+#G-note.pressed-key{
+	background-color: #eaa8ff;
+}
+#A-note.pressed-key{
+	background-color: #ffa8c2;
+}
+#B-note.pressed-key{
+	background-color: #ffc4a8;
+}
+#C5-note.pressed-key{
+	background-color: #f9ffa5;
+}
+
+	
