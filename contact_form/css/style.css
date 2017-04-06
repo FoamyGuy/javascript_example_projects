@@ -1,0 +1,16 @@
+#form-wrapper{
+    margin-top: 100px;
+}
+
+/*
+    "*" is a wildcard selector that will match all elements.
+    So "#form-wrapper *" means find all elements that are 
+    children of the #form-wrapper element.
+*/
+#form-wrapper *{
+    margin: 10px;
+}
+
+.error{
+    border: 2px solid red;
+}
