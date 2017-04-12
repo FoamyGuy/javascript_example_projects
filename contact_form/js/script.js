@@ -1,5 +1,8 @@
 $email_input = document.querySelector("#email-input");
-
+// use decendent selector to get a reference to the <form>
+// element on the page.
+$form = document.querySelector("#form-wrapper form");
+$form.reset();
 function validate_email(event_obj){
     var entered_email = $email_input.value;
     // indexOf() returns -1 if substring is not found
