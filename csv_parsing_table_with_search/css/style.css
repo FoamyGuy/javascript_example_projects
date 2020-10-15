@@ -1,0 +1,48 @@
+
+body{
+  padding: 30px;
+}
+
+table, tr, td, th {
+  border: 1px solid black;
+}
+
+td{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  margin:0;
+}
+div {
+  white-space: pre;
+}
+
+.table-container{
+  max-height: 100%;
+  overflow: auto;
+}
+
+.highlighted{
+  background-color: #a8a632 !important;
+}
+
+.red{
+  background-color: #ffbaba !important;
+}
+
+.blue{
+  background-color: #babbff !important;
+}
+
+.purple{
+  background-color: #e9baff !important;
+}

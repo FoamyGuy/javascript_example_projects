@@ -1,0 +1,15 @@
+
+body{
+  padding: 30px;
+}
+
+.arrow-btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+
+select{
+  width: 100%;
+}
